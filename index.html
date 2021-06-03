@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Burger</title>
+  <link rel="icon" type="image/png" href="Burger.ico" >
+	<script src="https://kit.fontawesome.com/27b0ecd6f7.js" crossorigin="anonymous"></script>
+	<style>
+body {
+  font-family: sans-serif;
+}
+
+.respmenu a { 
+  width: 500px;
+  height: 30px;
+  margin: 0px;
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #ff00ff;
+  max-width: 200px;
+  background: #451250;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+  border-radius: 10px;
+}
+.respmenu input[type="checkbox"], .respmenu .fa-bars, .respmenu .fa-times {
+  position: absolute;  
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px 0 0 0;
+  left: 10;
+  top: 0;
+  width: 38px;
+  height: 48px;  
+}
+ 
+.respmenu .fa-bars, .respmenu .fa-times {
+  font-size: 40px;
+  pointer-events: none;
+  margin: 0 0 0 15px;
+}
+ 
+.respmenu input[type="checkbox"] {
+  opacity: 0; 
+}
+ 
+.respmenu {
+  height: 56px;
+  width: 69px;
+  display: flex;
+  color: #fff;
+  border-radius: 20px;
+  position: absolute; 
+  background: #451250;
+  min-height: 48px;
+}
+.respmenu:hover { 
+	background:;
+ }
+.respmenu nav {
+  display: none;
+  margin: 0px 0 0 10px;
+}
+
+.respmenu nav ul{ 
+   margin: 0 0 0 20px;
+ }
+
+.respmenu nav ul li {
+	width:20px; 
+	height:60px;
+	display: block;
+    margin: 0 0 0 0;
+}
+ 
+.respmenu nav ul li a {
+  font-size: 28px;
+  margin: 10 0 0 0px;
+}
+
+.respmenu nav ul li :hover {
+  background: #ff00ff;
+}
+
+.respmenu input:checked ~ nav {
+  display:inline-block; ;
+}
+ 
+.respmenu input:checked ~ .fa-bars {
+  display: none;
+}
+ 
+.respmenu input:not(:checked) ~ .fa-times {
+  display: none;
+}
+	</style>
+</head>
+<body>
+	<div class="respmenu">
+  <input type="checkbox">
+  <i class="fas fa-bars"></i>
+  <i class="fas fa-times"></i>
+  <nav>
+    <ul>
+      <li><a href="#"><i class="fas fa-home"></i> Inicio</a></li>
+      <li><a href="#"><i class="fas fa-theater-masks"></i> Generos</a></li>
+      <li><a href="#"><i class="fas fa-align-justify"></i> Series</a></li>
+    </ul>
+  </nav>
+</div>
+</body>
+</html>
